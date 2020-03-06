@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      display: flex;
+      flex-direction: column;
+
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      overflow: hidden;
+    }
+    
+    header {
+      padding: 20px 20px 20px 20px;
+    }
+  
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      padding: 0px 20px 0px 20px;
+    }
+  
+    .avatar {
+      vertical-align: middle;
+      width: auto;
+      height: calc(100vh/4);
+      border-radius: 50%;
+    }
+
+    .txtName {
+      color: white;
+      font-size: 18px;
+    }
+
+    .txtContent {
+      margin-top: 10px;
+      color: white;
+      font-size: 16px;
+    }
+    
+    .txtHighLight {
+      color: blue;
+      font-size: 16px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 22px;
+    }
+  
+    a:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    footer {
+      margin: 10px 0 10px 0;
+      align-self: center;
+      flex-direction: column;
+      border: 1px solid white;
+      padding: 5px 5px 5px 5px;
+      width: calc(100vh/7);
+      height: calc(100vh/7);
+      max-height: 60px;
+      max-width: 60px;
+      border-radius: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    .email {
+      display: block;
+      width: auto;
+      height: calc(100vh/7);
+      max-height: 30px;
+    }
+
+    .txtEmail {
+      color: white;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="txtName">Paul Lapkin - UI/UX Designer</span>
+  </header>
+  <main>
+    <img src="avatar.png" alt="Avatar" class="avatar">
+    <span class="txtContent">
+      I help customers save time and money on their weekly shopping at 
+      <a class="txtHighLight">Flipp</a>.
+      I love turning complex problems into simple solutions.
+    </span>
+    <span class="txtContent">
+      Follow me on <a class="txtHighLight" href="https://www.facebook.com/khanhduy.179">Facebook</a>
+    </span>
+  </main>
+  <footer onclick="window.location.href='mailto:lekhanhduyduy1201@gmail.com'">
+    <img src="email.png" alt="Email" class="email">
+    <a class="txtEmail" href="mailto:lekhanhduyduy1201@gmail.com">Email</a>
+  </footer>
+</body>
+
+</html>
